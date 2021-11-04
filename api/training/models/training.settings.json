@@ -18,6 +18,12 @@
     },
     "bdftghbrt": {
       "type": "integer"
+    },
+    "participants": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "trainings",
+      "dominant": true
     }
   }
 }
