@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_util_sub_events",
+  "info": {
+    "name": "subEvent",
+    "icon": "arrows-alt-h"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    },
+    "presenters": {
+      "plugin": "users-permissions",
+      "collection": "user"
+    }
+  }
+}

@@ -1281,6 +1281,9 @@
                     "type": "string"
                   }
                 },
+                "schedule": {
+                  "type": "dynamiczone"
+                },
                 "published_at": {
                   "type": "string"
                 },

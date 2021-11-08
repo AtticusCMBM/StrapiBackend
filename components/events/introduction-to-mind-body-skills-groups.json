@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_events_introduction_to_mind_body_skills_groups",
+  "info": {
+    "name": "Introduction to Mind-Body Skills Groups",
+    "icon": "arrow-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "startTime": {
+      "type": "datetime"
+    },
+    "endTime": {
+      "type": "datetime"
+    },
+    "presenters": {
+      "plugin": "users-permissions",
+      "collection": "user"
+    }
+  }
+}

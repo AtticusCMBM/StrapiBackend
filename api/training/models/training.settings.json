@@ -24,6 +24,14 @@
       "collection": "user",
       "via": "trainings",
       "dominant": true
+    },
+    "schedule": {
+      "type": "dynamiczone",
+      "components": [
+        "events.introduction-to-mind-body-skills-groups",
+        "events.small-group",
+        "events.coaching-sessions"
+      ]
     }
   }
 }

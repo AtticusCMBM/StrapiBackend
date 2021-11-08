@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_events_coaching_sessions",
+  "info": {
+    "name": "Coaching Sessions",
+    "icon": "archway"
+  },
+  "options": {},
+  "attributes": {
+    "subEvent": {
+      "type": "component",
+      "repeatable": true,
+      "component": "util.sub-event"
+    },
+    "startTime": {
+      "type": "datetime",
+      "required": true
+    },
+    "endTime": {
+      "type": "datetime",
+      "required": true
+    }
+  }
+}

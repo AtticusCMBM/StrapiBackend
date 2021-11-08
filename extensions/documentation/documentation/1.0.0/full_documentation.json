@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "11/04/2021 5:02:29 PM"
+    "x-generation-date": "11/08/2021 10:07:35 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -2864,6 +2864,251 @@
               }
             }
           },
+          "schedule": {
+            "type": "array",
+            "items": {
+              "oneOf": [
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "events.introduction-to-mind-body-skills-groups",
+                        "events.small-group",
+                        "events.coaching-sessions"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "startTime": {
+                      "type": "string",
+                      "format": "date-time"
+                    },
+                    "endTime": {
+                      "type": "string",
+                      "format": "date-time"
+                    },
+                    "presenters": {
+                      "type": "array",
+                      "items": {
+                        "required": [
+                          "id",
+                          "username",
+                          "email"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "username": {
+                            "type": "string"
+                          },
+                          "email": {
+                            "type": "string"
+                          },
+                          "provider": {
+                            "type": "string"
+                          },
+                          "password": {
+                            "type": "string"
+                          },
+                          "resetPasswordToken": {
+                            "type": "string"
+                          },
+                          "confirmationToken": {
+                            "type": "string"
+                          },
+                          "confirmed": {
+                            "type": "boolean"
+                          },
+                          "blocked": {
+                            "type": "boolean"
+                          },
+                          "role": {
+                            "type": "string"
+                          },
+                          "ff": {
+                            "type": "string",
+                            "enum": [
+                              "FACULTY",
+                              "STAFF"
+                            ]
+                          },
+                          "address": {
+                            "type": "string"
+                          },
+                          "trainings": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          },
+                          "created_by": {
+                            "type": "string"
+                          },
+                          "updated_by": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "events.introduction-to-mind-body-skills-groups",
+                        "events.small-group",
+                        "events.coaching-sessions"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "number": {
+                      "type": "integer"
+                    },
+                    "startTime": {
+                      "type": "string",
+                      "format": "date-time"
+                    },
+                    "endTime": {
+                      "type": "string",
+                      "format": "date-time"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "title",
+                    "number"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "events.introduction-to-mind-body-skills-groups",
+                        "events.small-group",
+                        "events.coaching-sessions"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "subEvent": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id",
+                          "title",
+                          "link"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "title": {
+                            "type": "string"
+                          },
+                          "link": {
+                            "type": "string"
+                          },
+                          "presenters": {
+                            "type": "array",
+                            "items": {
+                              "required": [
+                                "id",
+                                "username",
+                                "email"
+                              ],
+                              "properties": {
+                                "id": {
+                                  "type": "string"
+                                },
+                                "username": {
+                                  "type": "string"
+                                },
+                                "email": {
+                                  "type": "string"
+                                },
+                                "provider": {
+                                  "type": "string"
+                                },
+                                "password": {
+                                  "type": "string"
+                                },
+                                "resetPasswordToken": {
+                                  "type": "string"
+                                },
+                                "confirmationToken": {
+                                  "type": "string"
+                                },
+                                "confirmed": {
+                                  "type": "boolean"
+                                },
+                                "blocked": {
+                                  "type": "boolean"
+                                },
+                                "role": {
+                                  "type": "string"
+                                },
+                                "ff": {
+                                  "type": "string",
+                                  "enum": [
+                                    "FACULTY",
+                                    "STAFF"
+                                  ]
+                                },
+                                "address": {
+                                  "type": "string"
+                                },
+                                "trainings": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "string"
+                                  }
+                                },
+                                "created_by": {
+                                  "type": "string"
+                                },
+                                "updated_by": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "startTime": {
+                      "type": "string",
+                      "format": "date-time"
+                    },
+                    "endTime": {
+                      "type": "string",
+                      "format": "date-time"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "startTime",
+                    "endTime"
+                  ]
+                }
+              ]
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -2885,6 +3130,251 @@
             "type": "array",
             "items": {
               "type": "string"
+            }
+          },
+          "schedule": {
+            "type": "array",
+            "items": {
+              "oneOf": [
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "events.introduction-to-mind-body-skills-groups",
+                        "events.small-group",
+                        "events.coaching-sessions"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "startTime": {
+                      "type": "string",
+                      "format": "date-time"
+                    },
+                    "endTime": {
+                      "type": "string",
+                      "format": "date-time"
+                    },
+                    "presenters": {
+                      "type": "array",
+                      "items": {
+                        "required": [
+                          "id",
+                          "username",
+                          "email"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "username": {
+                            "type": "string"
+                          },
+                          "email": {
+                            "type": "string"
+                          },
+                          "provider": {
+                            "type": "string"
+                          },
+                          "password": {
+                            "type": "string"
+                          },
+                          "resetPasswordToken": {
+                            "type": "string"
+                          },
+                          "confirmationToken": {
+                            "type": "string"
+                          },
+                          "confirmed": {
+                            "type": "boolean"
+                          },
+                          "blocked": {
+                            "type": "boolean"
+                          },
+                          "role": {
+                            "type": "string"
+                          },
+                          "ff": {
+                            "type": "string",
+                            "enum": [
+                              "FACULTY",
+                              "STAFF"
+                            ]
+                          },
+                          "address": {
+                            "type": "string"
+                          },
+                          "trainings": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          },
+                          "created_by": {
+                            "type": "string"
+                          },
+                          "updated_by": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "events.introduction-to-mind-body-skills-groups",
+                        "events.small-group",
+                        "events.coaching-sessions"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "number": {
+                      "type": "integer"
+                    },
+                    "startTime": {
+                      "type": "string",
+                      "format": "date-time"
+                    },
+                    "endTime": {
+                      "type": "string",
+                      "format": "date-time"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "title",
+                    "number"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "events.introduction-to-mind-body-skills-groups",
+                        "events.small-group",
+                        "events.coaching-sessions"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "subEvent": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id",
+                          "title",
+                          "link"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "title": {
+                            "type": "string"
+                          },
+                          "link": {
+                            "type": "string"
+                          },
+                          "presenters": {
+                            "type": "array",
+                            "items": {
+                              "required": [
+                                "id",
+                                "username",
+                                "email"
+                              ],
+                              "properties": {
+                                "id": {
+                                  "type": "string"
+                                },
+                                "username": {
+                                  "type": "string"
+                                },
+                                "email": {
+                                  "type": "string"
+                                },
+                                "provider": {
+                                  "type": "string"
+                                },
+                                "password": {
+                                  "type": "string"
+                                },
+                                "resetPasswordToken": {
+                                  "type": "string"
+                                },
+                                "confirmationToken": {
+                                  "type": "string"
+                                },
+                                "confirmed": {
+                                  "type": "boolean"
+                                },
+                                "blocked": {
+                                  "type": "boolean"
+                                },
+                                "role": {
+                                  "type": "string"
+                                },
+                                "ff": {
+                                  "type": "string",
+                                  "enum": [
+                                    "FACULTY",
+                                    "STAFF"
+                                  ]
+                                },
+                                "address": {
+                                  "type": "string"
+                                },
+                                "trainings": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "string"
+                                  }
+                                },
+                                "created_by": {
+                                  "type": "string"
+                                },
+                                "updated_by": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "startTime": {
+                      "type": "string",
+                      "format": "date-time"
+                    },
+                    "endTime": {
+                      "type": "string",
+                      "format": "date-time"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "startTime",
+                    "endTime"
+                  ]
+                }
+              ]
             }
           },
           "published_at": {
@@ -3156,6 +3646,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "schedule": {
+                  "type": "dynamiczone"
                 },
                 "published_at": {
                   "type": "string"

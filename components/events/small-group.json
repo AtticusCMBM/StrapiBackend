@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_events_small_groups",
+  "info": {
+    "name": "Small Group",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "number": {
+      "type": "integer",
+      "min": 1,
+      "required": true
+    },
+    "startTime": {
+      "type": "datetime"
+    },
+    "endTime": {
+      "type": "datetime"
+    }
+  }
+}
