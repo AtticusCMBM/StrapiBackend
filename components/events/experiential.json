@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_events_experientials",
+  "info": {
+    "name": "Experiential",
+    "icon": "arrow-circle-down",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "link": {
+      "type": "string",
+      "required": true
+    },
+    "startTime": {
+      "type": "datetime",
+      "required": true
+    },
+    "endTime": {
+      "type": "datetime",
+      "required": true
+    },
+    "presenters": {
+      "plugin": "users-permissions",
+      "collection": "user"
+    },
+    "select": {
+      "type": "enumeration",
+      "enum": [
+        "Yoga"
+      ]
+    },
+    "optional": {
+      "type": "boolean",
+      "required": true
+    }
+  }
+}

@@ -1,7 +1,7 @@
 {
   "collectionName": "components_events_introduction_to_mind_body_skills_groups",
   "info": {
-    "name": "Introduction to Mind-Body Skills Groups",
+    "name": "Lecture",
     "icon": "arrow-right",
     "description": ""
   },
@@ -16,6 +16,25 @@
     "presenters": {
       "plugin": "users-permissions",
       "collection": "user"
+    },
+    "link": {
+      "type": "string"
+    },
+    "select": {
+      "type": "enumeration",
+      "enum": [
+        "OverviewOfTheNewMedicine",
+        "IntroductionToMindBodySkillsGroups",
+        "BiologicalUnderpinningsOfMindBodyTherapies",
+        "Imagery",
+        "NutritionAndMindfulEating",
+        "MobilizingTransformingAndCelebratingTheEmotions",
+        "BreathingMovementExerciseandMedicalConsiderationsofMindBodySkills",
+        "Genograms",
+        "TraumaAndTransformation",
+        "SpiritualityAndHealing",
+        "BodyAwareness"
+      ]
     }
   }
 }

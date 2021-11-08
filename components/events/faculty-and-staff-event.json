@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_events_faculty_and_staff_events",
+  "info": {
+    "name": "Faculty and Staff Event",
+    "icon": "at"
+  },
+  "options": {},
+  "attributes": {
+    "startTime": {
+      "type": "datetime",
+      "required": true
+    },
+    "endTime": {
+      "type": "datetime",
+      "required": true
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_events_opening_meditations",
+  "info": {
+    "name": "Opening Meditation",
+    "icon": "backward"
+  },
+  "options": {},
+  "attributes": {
+    "presenters": {
+      "plugin": "users-permissions",
+      "collection": "user"
+    },
+    "startTime": {
+      "type": "datetime",
+      "required": true
+    },
+    "endTime": {
+      "type": "datetime",
+      "required": true
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

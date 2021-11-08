@@ -14,15 +14,13 @@
   "attributes": {
     "title": {
       "type": "string",
-      "required": true
-    },
-    "bdftghbrt": {
-      "type": "integer"
+      "required": true,
+      "pluginOptions": {}
     },
     "participants": {
+      "via": "trainings",
       "plugin": "users-permissions",
       "collection": "user",
-      "via": "trainings",
       "dominant": true
     },
     "schedule": {
@@ -30,8 +28,32 @@
       "components": [
         "events.introduction-to-mind-body-skills-groups",
         "events.small-group",
-        "events.coaching-sessions"
-      ]
+        "events.coaching-sessions",
+        "events.closing-ceremony",
+        "events.welcome-and-introductions",
+        "events.special-interest-lunches",
+        "events.opening-meditation",
+        "events.experiential",
+        "events.certification-candidates",
+        "events.faculty-and-staff-event",
+        "events.multi-event",
+        "events.other-event"
+      ],
+      "pluginOptions": {}
+    },
+    "faculty": {
+      "type": "component",
+      "repeatable": true,
+      "component": "util.faculty"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "PTP",
+        "ATP",
+        "WORKSHOP"
+      ],
+      "required": true
     }
   }
 }

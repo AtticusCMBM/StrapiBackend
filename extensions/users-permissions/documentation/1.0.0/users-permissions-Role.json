@@ -561,13 +561,6 @@
                 "role": {
                   "type": "string"
                 },
-                "ff": {
-                  "type": "string",
-                  "enum": [
-                    "FACULTY",
-                    "STAFF"
-                  ]
-                },
                 "address": {
                   "type": "string"
                 },

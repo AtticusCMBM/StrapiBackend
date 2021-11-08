@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_events_welcome_and_introductions",
+  "info": {
+    "name": "Welcome and Introductions",
+    "icon": "american-sign-language-interpreting"
+  },
+  "options": {},
+  "attributes": {
+    "startTime": {
+      "type": "datetime",
+      "required": true
+    },
+    "endTime": {
+      "type": "datetime",
+      "required": true
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

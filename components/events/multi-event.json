@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_events_multi_events",
+  "info": {
+    "name": "Multi-Event",
+    "icon": "adjust"
+  },
+  "options": {},
+  "attributes": {
+    "subEvents": {
+      "type": "component",
+      "repeatable": true,
+      "component": "util.sub-event"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "startTime": {
+      "type": "datetime"
+    },
+    "endTime": {
+      "type": "datetime",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

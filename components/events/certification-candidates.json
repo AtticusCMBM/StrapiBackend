@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_events_certification_candidates",
+  "info": {
+    "name": "Certification Candidates",
+    "icon": "anchor"
+  },
+  "options": {},
+  "attributes": {
+    "startTime": {
+      "type": "datetime",
+      "required": true
+    },
+    "endTime": {
+      "type": "datetime",
+      "required": true
+    },
+    "llink": {
+      "type": "string",
+      "required": true
+    },
+    "presenters": {
+      "plugin": "users-permissions",
+      "collection": "user"
+    }
+  }
+}

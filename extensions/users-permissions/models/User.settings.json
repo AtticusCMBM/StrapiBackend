@@ -59,13 +59,6 @@
       "plugin": "users-permissions",
       "configurable": false
     },
-    "ff": {
-      "type": "enumeration",
-      "enum": [
-        "FACULTY",
-        "STAFF"
-      ]
-    },
     "address": {
       "type": "string",
       "private": true

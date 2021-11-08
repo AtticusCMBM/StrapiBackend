@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_util_faculties",
+  "info": {
+    "name": "faculty",
+    "icon": "heading"
+  },
+  "options": {},
+  "attributes": {
+    "faculty": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "hasSmallGroup": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "reunionDate": {
+      "type": "datetime",
+      "required": false
+    }
+  }
+}
